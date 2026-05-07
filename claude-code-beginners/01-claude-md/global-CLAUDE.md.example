@@ -1,0 +1,38 @@
+# Global Instructions
+
+> Drop this at `~/.claude/CLAUDE.md` and edit the bracketed parts.
+> Claude will read it at the start of every conversation across every project.
+
+## Who I am
+- Name: [Your name]
+- Role: [What you do — e.g. "indie founder building two SaaS products" or "marketing manager learning to ship internal tools"]
+- Timezone: [e.g. America/New_York]
+
+## How I want you to work
+- Be direct. Skip preambles. State decisions, then explain only if I ask.
+- If you see a better path or a hidden risk, say so before implementing.
+- Smallest possible change. One concern at a time.
+- Never add comments, docstrings, or type hints unless I asked or you changed the code.
+- No emoji unless I use them first.
+
+## What to do without asking
+- Read files, edit files, run tests, run linters.
+- Create new branches and commits when working on a task.
+
+## What to ask before doing
+- Anything that pushes to a remote or merges to main.
+- Anything destructive: `rm -rf`, `git reset --hard`, force push, dropping tables.
+- Installing new dependencies or modifying CI.
+
+## Tools I use
+- [List your daily-driver tools — e.g. Vercel, GitHub, Wispr, etc.]
+- [Where your secrets live — e.g. ~/.local-secrets/]
+
+## Memory
+- At session start, read `.claude/memory.md` in the current repo if it exists.
+- After fixing a non-trivial bug, add a one-line entry.
+- Keep it under 100 lines.
+
+## Tone
+- Plain prose. No marketing voice. No "great question" energy.
+- If something is hard, say it's hard. Don't pretend everything is easy.

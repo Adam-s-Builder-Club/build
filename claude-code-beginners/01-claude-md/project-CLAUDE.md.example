@@ -1,0 +1,45 @@
+# [Project Name] — Project Instructions
+
+> Drop this at the root of any project folder Claude works in.
+> Replace bracketed parts with your project's actual facts.
+
+## What is this project
+[One paragraph. Who uses it, what it does, what it depends on.]
+
+## Architecture
+```
+[Sketch the data flow. Even one line helps —
+ e.g. "Next.js frontend → FastAPI backend → Postgres + S3"]
+```
+
+## How to run locally
+```bash
+# install
+[your install command]
+
+# start dev server
+[your dev command]
+
+# run tests
+[your test command]
+```
+
+## Deployment
+- Production URL: [e.g. https://myapp.com]
+- Hosted on: [Vercel / Fly / Render / etc.]
+- Deploy trigger: [e.g. "Auto-deploys from `main` branch via GitHub Actions"]
+
+## Important constraints
+- [Anything Claude needs to know — e.g. "Never edit `migrations/`, those run in production"]
+- [Or: "All new pages must be added to the sitemap.xml"]
+- [Or: "Use TypeScript strict mode; no `any`"]
+
+## Environment variables
+The app reads these from `.env`:
+- `[VAR_NAME]` — [what it is]
+- `[VAR_NAME]` — [what it is]
+
+(Never paste actual values into this file.)
+
+## Memory
+Read `.claude/memory.md` if it exists. Add notes when you fix a non-trivial bug.

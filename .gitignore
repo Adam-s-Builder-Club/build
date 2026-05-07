@@ -1,0 +1,13 @@
+.DS_Store
+*.bak
+.env
+.env.local
+node_modules/
+__pycache__/
+.vscode/
+.idea/
+
+# Internal launch prep — never commit to the public repo
+LAUNCH/
+ideas-saved-decisions.md
+
