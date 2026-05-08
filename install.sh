@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Adam's Builder Club — installer
+# Adam's Builder Club: installer
 #
 # What this does:
 #   1. Detects your OS (Mac or Linux/WSL)
@@ -11,7 +11,7 @@
 # What this does NOT do:
 #   - Overwrite a working setup without backing it up first
 #   - Install gstack or compound engineering (those are optional, handled by the setup skill)
-#   - Send anything anywhere — runs entirely on your machine
+#   - Send anything anywhere: runs entirely on your machine
 #
 # Usage (run from the repo root):
 #   ./install.sh
@@ -42,14 +42,14 @@ note "Repo: $REPO_ROOT"
 note "Target: $CLAUDE_DIR"
 note ""
 
-# Step 1 — OS check
+# Step 1: OS check
 case "$(uname -s)" in
   Darwin) OS="mac"; ok "Detected macOS" ;;
   Linux)  OS="linux"; ok "Detected Linux/WSL" ;;
   *)      fail "Unsupported OS: $(uname -s). This installer supports macOS and Linux/WSL." ;;
 esac
 
-# Step 2 — ensure ~/.claude exists
+# Step 2: ensure ~/.claude exists
 if [ ! -d "$CLAUDE_DIR" ]; then
   warn "$CLAUDE_DIR does not exist."
   note "Make sure you've installed Claude Desktop and signed in at least once."
@@ -65,7 +65,7 @@ fi
 
 mkdir -p "$SKILLS_DIR"
 
-# Step 3 — back up existing CLAUDE.md if present
+# Step 3: back up existing CLAUDE.md if present
 if [ -f "${CLAUDE_DIR}/CLAUDE.md" ]; then
   STAMP=$(date +%Y%m%d-%H%M%S)
   BACKUP="${CLAUDE_DIR}/CLAUDE.md.backup-${STAMP}"
@@ -75,7 +75,7 @@ else
   note "No existing CLAUDE.md found (clean install)"
 fi
 
-# Step 4 — copy starter skills + routines from this repo
+# Step 4: copy starter skills + routines from this repo
 COPIED=0
 for src_dir in \
   "${REPO_ROOT}/claude-code-beginners/03-skills-starter" \
@@ -87,7 +87,7 @@ for src_dir in \
     # Only copy if it has a SKILL.md (skip plain README folders)
     [ -f "${skill}SKILL.md" ] || continue
     if [ -d "${SKILLS_DIR}/${name}" ]; then
-      warn "Skill ${name} already exists in ~/.claude/skills/ — skipping (delete it first to reinstall)"
+      warn "Skill ${name} already exists in ~/.claude/skills/: skipping (delete it first to reinstall)"
     else
       cp -r "$skill" "${SKILLS_DIR}/${name}"
       ok "Installed skill: ${name}"
@@ -97,7 +97,7 @@ for src_dir in \
 done
 [ "$COPIED" -eq 0 ] && note "No new skills installed (already present)"
 
-# Step 5 — install the setup-skill itself
+# Step 5: install the setup-skill itself
 SETUP_SRC="${REPO_ROOT}/setup-skill"
 SETUP_DEST="${SKILLS_DIR}/setup"
 if [ -d "$SETUP_SRC" ]; then
@@ -111,7 +111,7 @@ else
   fail "setup-skill/ not found at $SETUP_SRC. Did you run this from the repo root?"
 fi
 
-# Step 6 — final instructions
+# Step 6: final instructions
 say ""
 say "Done."
 say "──────────────────────────────"

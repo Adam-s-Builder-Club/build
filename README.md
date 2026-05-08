@@ -1,12 +1,12 @@
-# Adam's Builder Club — `build`
+# Adam's Builder Club: `build`
 
 The companion repo for [Adam's Builder Club](https://www.skool.com/adams-builder-club) and the [Claude Code Beginners YouTube series](https://youtube.com/@adambadar).
 
-Everything I show in the videos lives here — prompts, CLAUDE.md templates, starter skills, demo projects.
+Everything I show in the videos lives here: prompts, CLAUDE.md templates, starter skills, demo projects.
 
 ---
 
-## Quickstart — paste this into Claude Desktop
+## Quickstart: paste this into Claude Desktop
 
 ```
 Set me up using github.com/Adam-s-Builder-Club/build.
@@ -45,19 +45,19 @@ build/
 
 ## Watch the video
 
-[Claude Code Beginners — Episode 1](https://youtube.com/@adambadar) on YouTube.
+[Claude Code Beginners: Episode 1](https://youtube.com/@adambadar) on YouTube.
 
 ## Join the community
 
 [skool.com/adams-builder-club](https://www.skool.com/adams-builder-club)
 
-- **Free** — Video 1 companion course, prompt library, GitHub starter pack, community discussion
-- **$9/mo** — premium prompts (weekly drops), all Build Night replays, member-only skills
-- **$29/mo** *(soon)* — monthly office hours, Founder OS skills
+- **Free**: Video 1 companion course, prompt library, GitHub starter pack, community discussion
+- **$9/mo**: premium prompts (weekly drops), all Build Night replays, member-only skills
+- **$29/mo** *(soon)*: monthly office hours, Founder OS skills
 
 ## License
 
-MIT — use anything in here for any purpose, no attribution required (but appreciated).
+MIT: use anything in here for any purpose, no attribution required (but appreciated).
 
 ## Built by
 
@@ -67,4 +67,4 @@ MIT — use anything in here for any purpose, no attribution required (but appre
 
 ## Contributing
 
-Found a typo? Built a skill that should be in here? Open a PR. The repo is meant to be a living artifact — every contribution makes the next person's first day easier.
+Found a typo? Built a skill that should be in here? Open a PR. The repo is meant to be a living artifact: every contribution makes the next person's first day easier.

@@ -1,6 +1,6 @@
 ---
 name: brainstorm
-description: Forces structured idea generation when you'd otherwise type "give me ideas for X". Generates 5 angles, 3 options per angle, ranked with explicit tradeoffs. Invoke whenever the user asks for ideas, options, possibilities, names, or approaches to a problem — anytime they're in divergent-thinking mode and would benefit from breadth before depth.
+description: Forces structured idea generation when you'd otherwise type "give me ideas for X". Generates 5 angles, 3 options per angle, ranked with explicit tradeoffs. Invoke whenever the user asks for ideas, options, possibilities, names, or approaches to a problem. Use it anytime they're in divergent-thinking mode and would benefit from breadth before depth.
 ---
 
 # Brainstorm
@@ -19,7 +19,7 @@ The default failure mode of "give me ideas for X" is 5 generic options that all 
 
 ### 1. Clarify (only if needed)
 
-If the prompt is vague — "give me ideas for X" with no context — ask 1-2 sharp questions:
+If the prompt is vague (e.g. "give me ideas for X" with no context), ask 1-2 sharp questions:
 - Who is this for?
 - What does success look like?
 - Any constraints (budget, time, tools, audience)?
@@ -50,13 +50,13 @@ For each angle, give 3 specific, concrete options. Each option gets:
 
 ### 4. Rank with the user's criteria
 
-Ask: "What matters most — cost, speed, differentiation, defensibility, something else?"
+Ask: "What matters most: cost, speed, differentiation, defensibility, something else?"
 
 Rank the top 5 options against that criterion. Show your reasoning in one sentence per ranking.
 
 ### 5. Recommend one
 
-End with a single recommendation and a reason. Not "any of these would work" — a real pick.
+End with a single recommendation and a reason. Don't say "any of these would work." Pick one.
 
 ## Output template
 
@@ -64,18 +64,18 @@ End with a single recommendation and a reason. Not "any of these would work" —
 # Brainstorm: [topic]
 
 ## Angles
-1. [Angle 1 — one-line frame]
-2. [Angle 2 — one-line frame]
-3. [Angle 3 — one-line frame]
-4. [Angle 4 — one-line frame]
-5. [Angle 5 — one-line frame]
+1. [Angle 1: one-line frame]
+2. [Angle 2: one-line frame]
+3. [Angle 3: one-line frame]
+4. [Angle 4: one-line frame]
+5. [Angle 5: one-line frame]
 
 ## Options
 
 ### Angle 1: [name]
-- **Option A** — [description]. Best for: [X]. Downside: [Y].
-- **Option B** — [description]. Best for: [X]. Downside: [Y].
-- **Option C** — [description]. Best for: [X]. Downside: [Y].
+- **Option A**: [description]. Best for: [X]. Downside: [Y].
+- **Option B**: [description]. Best for: [X]. Downside: [Y].
+- **Option C**: [description]. Best for: [X]. Downside: [Y].
 
 ### Angle 2: [name]
 [same pattern]
@@ -83,14 +83,14 @@ End with a single recommendation and a reason. Not "any of these would work" —
 [... through Angle 5 ...]
 
 ## Top 5 ranked by [criterion]
-1. [Option] — [one-line reason]
-2. [Option] — [one-line reason]
-3. [Option] — [one-line reason]
-4. [Option] — [one-line reason]
-5. [Option] — [one-line reason]
+1. [Option]: [one-line reason]
+2. [Option]: [one-line reason]
+3. [Option]: [one-line reason]
+4. [Option]: [one-line reason]
+5. [Option]: [one-line reason]
 
 ## My pick
-**[Option name]** — because [one-paragraph reason].
+**[Option name]**: because [one-paragraph reason].
 ```
 
 ## Personalization
@@ -99,12 +99,12 @@ Edit this skill to match your domain:
 
 - **Replace the angle prompts** with angle types relevant to your work (e.g. for product: features, monetization, distribution, retention, defensibility)
 - **Set defaults for your criteria** (e.g. always rank by "fastest to ship" if you're a solo founder under deadline pressure)
-- **Add your taste** — if you hate certain types of ideas (e.g. "anything that requires paid ads"), state that here so the skill skips them by default
+- **Add your taste**: if you hate certain types of ideas (e.g. "anything that requires paid ads"), state that here so the skill skips them by default
 
 ## Don't do
 
 - Don't generate ideas without angles first
 - Don't give 10+ options (the user will glaze over)
 - Don't rank without asking what matters
-- Don't recommend "any of these would work" — pick one
+- Don't recommend "any of these would work." Pick one.
 - Don't pretend an option has no downsides

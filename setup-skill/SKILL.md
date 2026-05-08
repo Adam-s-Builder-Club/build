@@ -3,14 +3,14 @@ name: setup
 description: Personalize a fresh Adam's Builder Club install. Walks the user through their role, tools, tone, and optional add-ons (gstack, compound engineering), then writes a customized ~/.claude/CLAUDE.md. Invoke when a user has just cloned the Adam's Builder Club repo and wants their setup tailored, or when they say "set me up" / "personalize Claude" / "configure my CLAUDE.md".
 ---
 
-# Setup — Personalize Adam's Builder Club
+# Setup: Personalize Adam's Builder Club
 
 You are walking the user through their first Adam's Builder Club setup. Your job is to ask focused questions, then write `~/.claude/CLAUDE.md` based on their answers.
 
 ## Operating principles
 
 - **Ask one question at a time.** Don't dump all 8 questions at once. Wait for the answer, acknowledge briefly, then ask the next.
-- **Show your work.** After each answer, briefly state what you'll do with it ("Got it — I'll add a 'tone: terse' line to your CLAUDE.md").
+- **Show your work.** After each answer, briefly state what you'll do with it ("Got it: I'll add a 'tone: terse' line to your CLAUDE.md").
 - **Default to skipping advanced items** unless the user opts in. Most beginners don't need gstack or compound engineering on day one.
 - **Never write to `~/.claude/CLAUDE.md` until the user has reviewed the final draft.** Show the full file, ask for any edits, then write.
 - **Always back up.** If `~/.claude/CLAUDE.md` exists when you go to write it, copy it to `~/.claude/CLAUDE.md.backup-<timestamp>` first.
@@ -23,28 +23,28 @@ Open with:
 > "Welcome to Adam's Builder Club. I'm going to ask you 6-8 questions, then write a personalized `~/.claude/CLAUDE.md` based on your answers. About 3 minutes. Ready?"
 
 Then check the user's environment:
-- `ls ~/.claude/` — does the directory exist? (It should, from `install.sh`.)
+- `ls ~/.claude/`: does the directory exist? (It should, from `install.sh`.)
 - Does `~/.claude/CLAUDE.md` already exist? If yes, mention it and confirm we'll back it up before overwriting.
 
 ### 2. Ask the questions, in order
 
-Ask each one in plain prose. Don't number them visibly to the user — just ask naturally.
+Ask each one in plain prose. Don't number them visibly to the user: just ask naturally.
 
-1. **Name** — "What should I call you?"
+1. **Name**: "What should I call you?"
 
-2. **Role / what they do** — "In one sentence, what do you do? (e.g. 'I run a marketing agency' or 'I'm a non-technical founder building my first SaaS' or 'I'm a designer learning to code with AI'.)"
+2. **Role / what they do**: "In one sentence, what do you do? (e.g. 'I run a marketing agency' or 'I'm a non-technical founder building my first SaaS' or 'I'm a designer learning to code with AI'.)"
 
-3. **What they're building** — "What's the main thing you're using Claude for right now? Skip if you're just exploring."
+3. **What they're building**: "What's the main thing you're using Claude for right now? Skip if you're just exploring."
 
-4. **Timezone** — "What timezone are you in? (e.g. America/New_York, Europe/London.)"
+4. **Timezone**: "What timezone are you in? (e.g. America/New_York, Europe/London.)"
 
-5. **Tone preference** — "How do you want me to talk to you? Pick one: terse (just the answer, no preamble) · friendly (warm but efficient) · formal (full sentences, professional). Default is terse."
+5. **Tone preference**: "How do you want me to talk to you? Pick one: terse (just the answer, no preamble) · friendly (warm but efficient) · formal (full sentences, professional). Default is terse."
 
-6. **Tool stack** — "What tools do you use daily? Pick any that apply: GitHub · Vercel · Cursor · Linear · Notion · Slack · Figma · Google Workspace · other (specify)."
+6. **Tool stack**: "What tools do you use daily? Pick any that apply: GitHub · Vercel · Cursor · Linear · Notion · Slack · Figma · Google Workspace · other (specify)."
 
-7. **Optional: gstack** — "Want me to install gstack? It's a CLI for browser automation, QA testing, and design review workflows. Useful if you're shipping web apps. Skip if you're just starting out. [y/N]"
+7. **Optional: gstack**: "Want me to install gstack? It's a CLI for browser automation, QA testing, and design review workflows. Useful if you're shipping web apps. Skip if you're just starting out. [y/N]"
 
-8. **Optional: compound engineering** — "Want me to install compound engineering? It's a planning + review methodology with workflows for `/plan`, `/work`, and PR review. Recommended if you're doing serious building. [y/N]"
+8. **Optional: compound engineering**: "Want me to install compound engineering? It's a planning + review methodology with workflows for `/plan`, `/work`, and PR review. Recommended if you're doing serious building. [y/N]"
 
 ### 3. Generate the CLAUDE.md draft
 
@@ -132,18 +132,18 @@ End with a short recap:
 > - {Installed gstack} (if applicable)
 > - {Installed compound engineering} (if applicable)
 >
-> Next: try a small task — open an empty folder in Claude and ask it to build something. The portfolio-site demo at `claude-code-beginners/06-portfolio-website-demo/` is a good first run."
+> Next: try a small task: open an empty folder in Claude and ask it to build something. The portfolio-site demo at `claude-code-beginners/06-portfolio-website-demo/` is a good first run."
 
 ## Common edge cases
 
-- **User skips a question** — just leave that section out of the CLAUDE.md draft, don't make something up.
-- **User has an existing CLAUDE.md they want to keep** — offer to merge: read theirs, add the new sections, ask before overwriting.
-- **User wants more advanced setup** — point them at the [Skool community](https://www.skool.com/adams-builder-club) where the founder-OS skills live.
-- **User asks for help mid-flow** — pause the questionnaire, answer their question, then ask "Want to continue setup, or come back to it later?"
+- **User skips a question**: just leave that section out of the CLAUDE.md draft, don't make something up.
+- **User has an existing CLAUDE.md they want to keep**: offer to merge: read theirs, add the new sections, ask before overwriting.
+- **User wants more advanced setup**: point them at the [Skool community](https://www.skool.com/adams-builder-club) where the founder-OS skills live.
+- **User asks for help mid-flow**: pause the questionnaire, answer their question, then ask "Want to continue setup, or come back to it later?"
 
 ## Don't do
 
 - Don't write to disk without showing the user the full content first.
 - Don't install anything that requires sudo without explicit user permission.
-- Don't push back if the user wants to skip a question — just skip and move on.
+- Don't push back if the user wants to skip a question: just skip and move on.
 - Don't recommend tools the user didn't ask about (no upsell pressure during setup).

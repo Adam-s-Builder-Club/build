@@ -13,11 +13,11 @@ Both work fine on demand (`/daily-brief`, `/morning-prep`). The unlock is wiring
 
 ## How scheduling works in Claude Code
 
-Three tiers — pick one:
+Three tiers: pick one:
 
-1. **`/loop`** — runs in your current Claude Code session. Dies when you close the terminal. Good for "check the deploy every 5 minutes" during a debugging session, not for daily routines.
-2. **Desktop Scheduled Tasks** — runs on your laptop on a cron schedule. Best fit for these routines because they need access to your local config files and connected MCPs.
-3. **Cloud Routines** — runs on Anthropic's infrastructure even when your laptop is closed. Useful for vacation mode but can't read local files.
+1. **`/loop`**: runs in your current Claude Code session. Dies when you close the terminal. Good for "check the deploy every 5 minutes" during a debugging session, not for daily routines.
+2. **Desktop Scheduled Tasks**: runs on your laptop on a cron schedule. Best fit for these routines because they need access to your local config files and connected MCPs.
+3. **Cloud Routines**: runs on Anthropic's infrastructure even when your laptop is closed. Useful for vacation mode but can't read local files.
 
 Full setup walkthrough: [`setup-routines.md`](./setup-routines.md)
 
@@ -60,8 +60,8 @@ Both routines read from a config file at `~/.claude/<routine-name>.config.md`. T
 - Tone preferences
 - Things to skip
 
-Edit your config any time — changes take effect on the next run.
+Edit your config any time: changes take effect on the next run.
 
 ## Coming in Plus
 
-The founder-OS routines I run for Bavlio and BaviMail every morning ship in [Adam's Builder Club Plus](https://www.skool.com/adams-builder-club) — competitor monitoring, lead-pipeline updates, deliverability watch, etc.
+The founder-OS routines I run for Bavlio and BaviMail every morning ship in [Adam's Builder Club Plus](https://www.skool.com/adams-builder-club): competitor monitoring, lead-pipeline updates, deliverability watch, etc.

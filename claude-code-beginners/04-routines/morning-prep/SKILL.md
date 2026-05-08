@@ -10,10 +10,10 @@ Wake up to a 1-page brief for every meeting on today's calendar. By 8am, you kno
 ## What it produces
 
 A daily preview document with:
-1. **Today at a glance** — meeting count, total time in meetings, focus blocks, the one thing that matters most today
-2. **Per-meeting brief** — for each meeting, attendees + context + 3 questions
-3. **Inbox highlights** — top 3 unread emails that need attention before the first meeting
-4. **One thing to do today** — single most important non-meeting task
+1. **Today at a glance**: meeting count, total time in meetings, focus blocks, the one thing that matters most today
+2. **Per-meeting brief**: for each meeting, attendees + context + 3 questions
+3. **Inbox highlights**: top 3 unread emails that need attention before the first meeting
+4. **One thing to do today**: single most important non-meeting task
 
 ## The flow
 
@@ -35,7 +35,7 @@ Reuse the logic in the `prep-meeting` skill (in `../03-skills-starter/prep-meeti
 - Look up recent email history with attendees (if Gmail is connected)
 - Generate 3 questions tailored to the meeting purpose
 
-Skip the per-meeting "your goal" line — at 8am the user doesn't need that level of depth across 8 meetings.
+Skip the per-meeting "your goal" line: at 8am the user doesn't need that level of depth across 8 meetings.
 
 ### 3. Pull inbox highlights
 
@@ -51,12 +51,12 @@ If inbox isn't connected, skip the section silently.
 Ask: of all today's open work (meetings, calendar todos, recent commitments from yesterday's brief, slipped items from the weekly review), what's the single most important non-meeting task?
 
 The answer should be one sentence. If you can't answer in one sentence, the day has no priority and you should say so:
-> "No clear priority — multiple competing tasks. Pick one in your first 10 minutes."
+> "No clear priority: multiple competing tasks. Pick one in your first 10 minutes."
 
 ### 5. Output
 
 ```markdown
-# Today — [date], [day of week]
+# Today: [date], [day of week]
 
 ## At a glance
 - **Meetings:** [count] · **Total in-meeting time:** [hours]
@@ -66,15 +66,15 @@ The answer should be one sentence. If you can't answer in one sentence, the day 
 ---
 
 ## Inbox highlights
-1. **[Sender] — [subject]** — [one-line context]
-2. **[Sender] — [subject]** — [one-line context]
-3. **[Sender] — [subject]** — [one-line context]
+1. **[Sender]: [subject]**: [one-line context]
+2. **[Sender]: [subject]**: [one-line context]
+3. **[Sender]: [subject]**: [one-line context]
 
 ---
 
 ## Meeting briefs
 
-### [Time] — [Meeting title]
+### [Time]: [Meeting title]
 **Attendees:** [list]
 **Context:** [2 lines]
 **Linked materials:** [doc summaries, if any]
@@ -83,7 +83,7 @@ The answer should be one sentence. If you can't answer in one sentence, the day 
 2. [Q]
 3. [Q]
 
-### [Time] — [Meeting title]
+### [Time]: [Meeting title]
 [same pattern]
 
 [... through last meeting ...]

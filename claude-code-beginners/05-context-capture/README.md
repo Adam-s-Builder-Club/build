@@ -1,4 +1,4 @@
-# Context Capture — How My Agents Get Smarter Every Week
+# Context Capture: How My Agents Get Smarter Every Week
 
 In Episode 1 I mention that every word I say and every action I take on my computer gets captured into a private database, and my agents learn from it. This folder is the architecture writeup, not the source.
 
@@ -29,7 +29,7 @@ Screenpipe                    Postgres + pgvector
 
 This is overkill for most people. I built it because I do too much across too many projects to remember any of it.
 
-## Alternatives — pick what fits
+## Alternatives: pick what fits
 
 | Tool | What it is | When to use |
 |---|---|---|
@@ -42,7 +42,7 @@ For 95% of people: Granola or Rewind. They give you 80% of the value with zero i
 
 ## How the agent uses it
 
-The trick isn't the capture — it's the retrieval. A skill called `bavi` knows how to:
+The trick isn't the capture: it's the retrieval. A skill called `bavi` knows how to:
 1. Take a question like "what was I told about the Acme deal last week"
 2. Hit the database with semantic search
 3. Return the matching transcript chunks with timestamps
@@ -54,4 +54,4 @@ Claude then answers from real context, not made-up generalities.
 
 The full Bavi codebase isn't open source (it has my personal data flowing through it). The architecture above is enough to build your own, or pick one of the alternatives.
 
-If demand is high enough, a sanitized template repo is on the roadmap — track in [Adam's Builder Club discussion](https://www.skool.com/adams-builder-club).
+If demand is high enough, a sanitized template repo is on the roadmap: track in [Adam's Builder Club discussion](https://www.skool.com/adams-builder-club).

@@ -1,4 +1,4 @@
-# CLAUDE.md — Memory and Modes
+# CLAUDE.md: Memory and Modes
 
 Goal of this chapter: Claude remembers how you like to work, in every project, forever.
 
@@ -10,8 +10,8 @@ There are two scopes:
 
 | Scope | Path | What goes here |
 |---|---|---|
-| **Global** | `~/.claude/CLAUDE.md` | Your defaults — tone, style, what to never do, your timezone, your role |
-| **Project** | `<project-folder>/CLAUDE.md` | Project-specific facts — architecture, dependencies, deployment URL, env vars |
+| **Global** | `~/.claude/CLAUDE.md` | Your defaults: tone, style, what to never do, your timezone, your role |
+| **Project** | `<project-folder>/CLAUDE.md` | Project-specific facts: architecture, dependencies, deployment URL, env vars |
 
 Claude reads both. Global gets overridden by project when they conflict.
 
@@ -35,5 +35,5 @@ You can adjust in Settings → Permissions. Start narrow, widen as you trust.
 
 ## Files in this chapter
 
-- `global-CLAUDE.md.example` — drop into `~/.claude/CLAUDE.md`
-- `project-CLAUDE.md.example` — drop into any project folder you start
+- `global-CLAUDE.md.example`: drop into `~/.claude/CLAUDE.md`
+- `project-CLAUDE.md.example`: drop into any project folder you start

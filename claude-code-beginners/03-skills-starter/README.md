@@ -4,7 +4,7 @@ Skills are the compounding move. Each one is a reusable capability you give Clau
 
 ## What's a skill, in one paragraph
 
-A skill is a folder containing a `SKILL.md` (instructions) and optional helper files. When you invoke the skill — by typing `/<skill-name>` or by Claude detecting the trigger from your `description` frontmatter — Claude follows those instructions for the current task. Skills install once, work forever.
+A skill is a folder containing a `SKILL.md` (instructions) and optional helper files. You invoke a skill by typing `/<skill-name>`, or Claude can pick it up automatically when your message matches the skill's `description` frontmatter. Once invoked, Claude follows the skill's instructions for the current task. Skills install once, work forever.
 
 ## The starter pack
 
@@ -29,7 +29,7 @@ Restart Claude Desktop or start a new conversation. Type `/brainstorm` to confir
 
 ## Personalize
 
-Every skill has a **Personalization** section near the bottom of its `SKILL.md`. Open the file, find that section, edit. The skill respects your edits on the next invocation — no restart needed.
+Every skill has a **Personalization** section near the bottom of its `SKILL.md`. Open the file, find that section, edit. The skill respects your edits on the next invocation: no restart needed.
 
 Common edits:
 - **Tone** (terse / friendly / formal)
@@ -57,4 +57,4 @@ cp -r ~/.claude/skills/brainstorm ~/.claude/skills/my-new-skill
 # edit ~/.claude/skills/my-new-skill/SKILL.md
 ```
 
-The Plus tier in [Adam's Builder Club](https://www.skool.com/adams-builder-club) ships the founder-OS skills I run two SaaS products with — dropped weekly.
+The Plus tier in [Adam's Builder Club](https://www.skool.com/adams-builder-club) ships the founder-OS skills I run two SaaS products with, dropped weekly.

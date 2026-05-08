@@ -1,4 +1,4 @@
-# Claude Code Beginners — Companion Files
+# Claude Code Beginners: Companion Files
 
 This folder mirrors the Episode 1 YouTube video chapter-by-chapter. Each subfolder is a chapter; each file is something you can copy and use today.
 
@@ -6,12 +6,12 @@ This folder mirrors the Episode 1 YouTube video chapter-by-chapter. Each subfold
 
 | Chapter | Folder | What's inside |
 |---|---|---|
-| 3 — Setup | `00-installation/` | Mac + Windows install, account setup, first run |
-| 4 — Memory & Modes | `01-claude-md/` | Global + project `CLAUDE.md` templates |
-| 5 — First Real Demo | `06-portfolio-website-demo/` | The portfolio website prompt + walkthrough |
-| 7 — Prompting | `02-prompts/` | Prompt library, anatomy, copy-paste templates |
-| 9 — Skills | `03-skills-starter/` | Starter pack of skills you can install today |
-| 12 — QoL | `04-routines/` | Scheduled tasks and routines |
+| 3: Setup | `00-installation/` | Mac + Windows install, account setup, first run |
+| 4: Memory & Modes | `01-claude-md/` | Global + project `CLAUDE.md` templates |
+| 5: First Real Demo | `06-portfolio-website-demo/` | The portfolio website prompt + walkthrough |
+| 7: Prompting | `02-prompts/` | Prompt library, anatomy, copy-paste templates |
+| 9: Skills | `03-skills-starter/` | Starter pack of skills you can install today |
+| 12: QoL | `04-routines/` | Scheduled tasks and routines |
 | (mention) | `05-context-capture/` | The architecture I use to capture all my context |
 
 ## Your action plan

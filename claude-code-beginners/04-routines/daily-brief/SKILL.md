@@ -5,16 +5,16 @@ description: Pulls the past 24h of news from public sources the user cares about
 
 # Daily Brief
 
-Wake up to a 1-page summary of what changed in the world overnight, scoped to what you actually care about. No general news slop — only sources you've named.
+Wake up to a 1-page summary of what changed in the world overnight, scoped to what you actually care about. No general news slop: only sources you've named.
 
 ## What it produces
 
 A 1-page brief with:
-1. **Top 3 stories** — what changed in the user's named topics, ranked by relevance
-2. **By topic** — short bullet under each tracked topic
-3. **In your industry** — competitor moves, funding, launches
-4. **Your social feed** — top X/HN/Reddit items in the user's chosen subs
-5. **Quick reads** — 5-10 links worth opening, sorted by importance
+1. **Top 3 stories**: what changed in the user's named topics, ranked by relevance
+2. **By topic**: short bullet under each tracked topic
+3. **In your industry**: competitor moves, funding, launches
+4. **Your social feed**: top X/HN/Reddit items in the user's chosen subs
+5. **Quick reads**: 5-10 links worth opening, sorted by importance
 
 ## The flow
 
@@ -50,7 +50,7 @@ Use the calendar-day window: from yesterday 00:00 in user's timezone to today's 
 
 | Source | How to pull |
 |---|---|
-| X / Twitter | Use Grok via xAI API (the X firehose is a native Grok tool) — query for posts from the user's followed accounts on their topics |
+| X / Twitter | Use Grok via xAI API (the X firehose is a native Grok tool): query for posts from the user's followed accounts on their topics |
 | HN | Fetch front page via the HN API, filter by topics |
 | Reddit | Pull top posts from subs in config (RSS or Reddit API) |
 | RSS | Fetch each feed in config |
@@ -72,12 +72,12 @@ Drop anything below a relevance score of 2. The user doesn't want to know about 
 Use this template:
 
 ```markdown
-# Daily Brief — [date], [day of week]
+# Daily Brief: [date], [day of week]
 
 ## Top 3
-1. **[Headline]** — [2-line summary, why it matters to user] [link]
-2. **[Headline]** — [2-line summary] [link]
-3. **[Headline]** — [2-line summary] [link]
+1. **[Headline]**: [2-line summary, why it matters to user] [link]
+2. **[Headline]**: [2-line summary] [link]
+3. **[Headline]**: [2-line summary] [link]
 
 ## By topic
 **[Topic 1]:** [bullet summary across the topic, 2-3 lines]
@@ -94,18 +94,18 @@ Use this template:
 - **Reddit:** [top 3 posts from tracked subs]
 
 ## Quick reads
-- [link 1] — [one-line summary]
-- [link 2] — [one-line summary]
+- [link 1]: [one-line summary]
+- [link 2]: [one-line summary]
 - ...
 ```
 
 ### 5. Deliver
 
 Method depends on user config:
-- **Email** — send via Gmail MCP (or SES if user has it configured) to the address in config
-- **File** — write to `~/.claude/daily-briefs/<YYYY-MM-DD>.md`
-- **Slack** — post to the configured channel
-- **Notion** — append to the configured page
+- **Email**: send via Gmail MCP (or SES if user has it configured) to the address in config
+- **File**: write to `~/.claude/daily-briefs/<YYYY-MM-DD>.md`
+- **Slack**: post to the configured channel
+- **Notion**: append to the configured page
 
 Always also save a copy to `~/.claude/daily-briefs/<YYYY-MM-DD>.md` for archive + tomorrow's "what's changed since yesterday" diff.
 
@@ -125,7 +125,7 @@ If your config has a `## Tone` section, follow it. Default is terse.
 
 ## Setup as a scheduled task
 
-This is a routine — meant to run on a schedule, not on demand. To wire it up:
+This is a routine: meant to run on a schedule, not on demand. To wire it up:
 
 1. Open Claude Desktop → Settings → Routines (or "Scheduled Tasks")
 2. Create a new task:

@@ -1,6 +1,6 @@
-# Setup — Scheduling Routines in Claude Desktop
+# Setup: Scheduling Routines in Claude Desktop
 
-Routines are Claude Code's name for scheduled tasks. The skills in this folder (`daily-brief`, `morning-prep`) are designed to be invoked on a schedule — they work fine on demand, but the value lands when they run while you sleep.
+Routines are Claude Code's name for scheduled tasks. The skills in this folder (`daily-brief`, `morning-prep`) are designed to be invoked on a schedule: they work fine on demand, but the value lands when they run while you sleep.
 
 Claude Code offers three scheduling tiers. Most beginners want **Desktop Scheduled Tasks**.
 
@@ -12,7 +12,7 @@ Claude Code offers three scheduling tiers. Most beginners want **Desktop Schedul
 | **Desktop Scheduled Tasks** | Your machine | Yes (any time the task fires) | Daily routines like daily-brief and morning-prep |
 | **Cloud Routines** | Anthropic's infrastructure | No | Tasks that should run even if your laptop is closed |
 
-For daily-brief and morning-prep, **Desktop Scheduled Tasks** is the right tier — they need access to your local config files and connected MCPs.
+For daily-brief and morning-prep, **Desktop Scheduled Tasks** is the right tier: they need access to your local config files and connected MCPs.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ cp -r 04-routines/morning-prep ~/.claude/skills/
 
 ### 2. Create the config file
 
-Each routine reads its config from `~/.claude/<routine-name>.config.md`. Open the SKILL.md inside the routine folder — there's a config template near the bottom. Copy it, fill in your details, save it at the path it specifies.
+Each routine reads its config from `~/.claude/<routine-name>.config.md`. Open the SKILL.md inside the routine folder: there's a config template near the bottom. Copy it, fill in your details, save it at the path it specifies.
 
 Example for daily-brief:
 ```bash
@@ -46,8 +46,10 @@ nano ~/.claude/daily-brief.config.md
 
 In Claude Desktop:
 1. Click your profile / settings icon
-2. Find **Routines** (or **Scheduled Tasks**, depending on your version)
-3. Click **New routine** (or **+**)
+2. Find **Scheduled Tasks** (this is the Desktop feature for runs that fire on your laptop)
+3. Click **New** (or **+**)
+
+Heads up: Don't confuse Desktop **Scheduled Tasks** with Cloud **Routines** at claude.ai/code. They're two different features. Scheduled Tasks runs on your laptop and can read your local files. Routines runs on Anthropic's servers and cannot. We're using Scheduled Tasks here.
 
 ### 4. Configure the task
 
@@ -99,7 +101,7 @@ If you want these to run even when your laptop is closed (e.g. on vacation), use
 Caveats:
 - Cloud routines can't read your local config files. You'll need to bake config into the prompt directly.
 - Minimum interval is 1 hour (vs. 1 minute for Desktop).
-- Cloud routines work on a fresh clone of any repo you connect — they don't have access to `~/.claude/`.
+- Cloud routines work on a fresh clone of any repo you connect: they don't have access to `~/.claude/`.
 
 For most daily routines on a laptop you actually use, Desktop is simpler.
 
@@ -113,4 +115,4 @@ For most daily routines on a laptop you actually use, Desktop is simpler.
 
 - Don't schedule a routine before you've run it manually at least once.
 - Don't run it more often than once a day unless the source actually changes that fast.
-- Don't put secrets in the routine prompt — secrets belong in `~/.local-secrets/` or the connector itself.
+- Don't put secrets in the routine prompt: secrets belong in `~/.local-secrets/` or the connector itself.

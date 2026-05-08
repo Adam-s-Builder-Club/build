@@ -1,4 +1,4 @@
-# First Build — Personal Portfolio Site
+# First Build: Personal Portfolio Site
 
 This is the prompt I paste in the first real demo of Episode 1. By the time it finishes, you have a working portfolio website on your laptop.
 
@@ -7,7 +7,7 @@ This is the prompt I paste in the first real demo of Episode 1. By the time it f
 1. Open Claude Desktop
 2. Open an empty folder (e.g. `~/Desktop/my-portfolio`)
 3. Trust the folder when prompted
-4. Press **Shift+Tab+Tab** to enter **Plan mode** (Claude will draft a plan before writing code)
+4. Press **Shift+Tab** twice (or type `/plan`) to enter **Plan mode** (Claude will draft a plan before writing code)
 
 ## The prompt
 
@@ -15,14 +15,14 @@ This is the prompt I paste in the first real demo of Episode 1. By the time it f
 Build me a one-page personal portfolio site as a single index.html file.
 
 Sections, in order:
-1. Hero — name, one-line tagline, two CTAs (LinkedIn + Email)
-2. About — three short paragraphs
-3. Services — three cards: name, one-line description, "Learn more" button (no-op for now)
-4. Selected work — three project cards with title, one-paragraph description, and "View project" link (no-op)
-5. Contact — email and a working contact form (HTML only, no backend yet)
+1. Hero with name, one-line tagline, two CTAs (LinkedIn + Email)
+2. About with three short paragraphs
+3. Services with three cards (name, one-line description, "Learn more" button that's a no-op for now)
+4. Selected work with three project cards (title, one-paragraph description, "View project" link that's a no-op)
+5. Contact with email and a working contact form (HTML only, no backend yet)
 
 Style: clean, modern, monospace headers, sans-serif body. Dark mode by default.
-No external dependencies — single file, inline CSS, no JavaScript frameworks.
+No external dependencies: single file, inline CSS, no JavaScript frameworks.
 
 When done, give me the command to open it in my browser.
 ```

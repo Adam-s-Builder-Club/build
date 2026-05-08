@@ -2,17 +2,17 @@
 
 The current toolchain I run for two SaaS products and a consulting agency. Updated as it changes.
 
-> **Note on affiliates.** Where a tool has a referral program, I use the affiliate link. I get a small kickback if you sign up; you pay the same price (sometimes less). I only list tools I actually use daily — not paid placements. If a non-affiliate tool is better, I'll list the non-affiliate one.
+> **Note on affiliates.** Where a tool has a referral program, I use the affiliate link. I get a small kickback if you sign up; you pay the same price (sometimes less). I only list tools I actually use daily: not paid placements. If a non-affiliate tool is better, I'll list the non-affiliate one.
 
 ## Daily drivers
 
 | Tool | What I use it for | Link |
 |---|---|---|
-| **Claude** | Primary AI — Claude Code, Desktop, Cowork | https://claude.com |
+| **Claude** | Primary AI: Claude Code, Desktop, Cowork | https://claude.com |
 | **Cursor** | When I need IDE-grade editing alongside Claude | https://cursor.com |
 | **GitHub** | Code, version control, public artifacts | https://github.com |
 | **Vercel** | Frontend deploys + custom domains | https://vercel.com |
-| **Wispr Flow** | Voice-to-text — most of my prompts are dictated | https://wisprflow.ai |
+| **Wispr Flow** | Voice-to-text: most of my prompts are dictated | https://wisprflow.ai |
 
 ## AI tooling
 
@@ -43,9 +43,9 @@ The current toolchain I run for two SaaS products and a consulting agency. Updat
 
 ## What I don't use (and why)
 
-- **n8n / Make** — I write skills in Claude Code instead. More flexible, no vendor lock-in.
-- **Lindy / Manus** — same reason. Skills compound; vendor automations don't.
-- **Generic prompt-pack subscriptions** — I'd rather build my own library that fits my workflow.
+- **n8n / Make**: I write skills in Claude Code instead. More flexible, no vendor lock-in.
+- **Lindy / Manus**: same reason. Skills compound; vendor automations don't.
+- **Generic prompt-pack subscriptions**: I'd rather build my own library that fits my workflow.
 
 ## The list updates
 

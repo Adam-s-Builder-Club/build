@@ -4,29 +4,29 @@ Most prompt-engineering courses are 10 hours long. The actual game is two variab
 
 ## The two variables
 
-1. **Specificity** — how much you describe the output you want
-2. **Context** — how much Claude knows about your situation
+1. **Specificity**: how much you describe the output you want
+2. **Context**: how much Claude knows about your situation
 
 Most "bad outputs" are one of these missing. That's it.
 
 ## The four-part structure I use
 
 ```
-[CONTEXT]      — what's true right now
-[GOAL]         — what success looks like
-[CONSTRAINTS]  — what to avoid or stay inside
-[FORMAT]       — how to deliver the answer
+[CONTEXT]     : what's true right now
+[GOAL]        : what success looks like
+[CONSTRAINTS] : what to avoid or stay inside
+[FORMAT]      : how to deliver the answer
 ```
 
 You don't need all four every time, but if a prompt is failing, check which of these is missing.
 
-## Example — bad prompt
+## Example: bad prompt
 
 > Write me a cold email.
 
 What's wrong: zero context (cold email to who? selling what?), zero specificity (length? tone?), zero format (subject line included?).
 
-## Example — good prompt
+## Example: good prompt
 
 > [CONTEXT] I run a B2B email infrastructure SaaS called Bavlio. It helps founders send cold email at scale without landing in spam.
 >
@@ -40,7 +40,7 @@ The second one will produce something usable on the first try. The first one wil
 
 ## When to skip structure
 
-Quick lookups, debugging, "what does this code do" — just ask. Structure pays off when output quality matters or when you'll reuse the prompt.
+Quick lookups, debugging, "what does this code do": just ask. Structure pays off when output quality matters or when you'll reuse the prompt.
 
 ## Save the ones that work
 

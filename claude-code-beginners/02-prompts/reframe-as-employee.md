@@ -1,4 +1,4 @@
-# Reframe — AI as Employee, Not Search Engine
+# Reframe: AI as Employee, Not Search Engine
 
 If you only remember one thing from Episode 1, it's this.
 
@@ -6,8 +6,8 @@ If you only remember one thing from Episode 1, it's this.
 
 Stop treating Claude like Google. Treat it like an employee.
 
-A search engine: you ask, it returns results, you do the work.
-An employee: you give them context, a workspace, and tools — then you ask for the work.
+A search engine works like this: you ask, it returns results, you do the work.
+An employee works differently. You give them context, a workspace, and tools. Then you ask for the work.
 
 The reason most people get bad outputs from AI is they're using employee-tier tools with search-engine-tier inputs.
 
@@ -46,6 +46,6 @@ Then state what you actually want.
 
 ## The compounding angle
 
-Every CLAUDE.md you write, every skill you install, every tool you connect — these are the things you give to the employee once and never again. They compound. After three months, your Claude knows more about how you work than any new hire ever would on day one.
+Every CLAUDE.md you write, every skill you install, every tool you connect. These are the things you give to the employee once and never again. They compound. After three months, your Claude knows more about how you work than any new hire ever would on day one.
 
 That's the actual unlock.

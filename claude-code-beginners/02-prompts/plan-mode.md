@@ -4,7 +4,7 @@ Two keystrokes. Biggest jump in output quality you'll get all day.
 
 ## What it is
 
-Press **Shift + Tab + Tab** before you send a prompt. Claude switches into Plan mode:
+Press **Shift+Tab** twice (or type `/plan`) before you send a prompt. Claude switches into Plan mode:
 1. It drafts a plan instead of writing code immediately
 2. It asks 1-5 clarifying questions
 3. You approve, edit, or reject the plan
@@ -41,4 +41,4 @@ You can edit the plan inline. Add/remove steps. Then approve.
 
 ## When plan mode goes wrong
 
-If the plan is bad: reject it, restate your goal more clearly, try again. Don't approve a bad plan and try to course-correct mid-build — you'll waste more tokens.
+If the plan is bad: reject it, restate your goal more clearly, try again. Don't approve a bad plan and try to course-correct mid-build: you'll waste more tokens.
